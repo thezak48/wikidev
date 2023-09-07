@@ -4,8 +4,14 @@ on:
   push:
     branches:
     - main
-    paths_ignore:
+    paths-ignore:
+    - '.github**/*'
     - 'zh/**/*'
+    - 'fr/**/*'
+    - 'assets/**/*'
+    - 'images/**/*'
+    - 'scripts/**/*'
+    - 'README.md'
 
 jobs:
   gpt_translate:

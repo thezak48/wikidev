@@ -12,6 +12,7 @@ on:
     - 'images/**/*'
     - 'scripts/**/*'
     - 'README.md'
+    - 'install-script.md'
 
 jobs:
   gpt_translate:
@@ -34,5 +35,6 @@ jobs:
         apikey: ${{ secrets.OPENAI_API_KEY }}
         model: "gpt-3.5-turbo-16k"
         inputFiles: ${{ steps.changed_files.outputs.files }}
-        outputFiles: 'zh/**/*.md'
-        languages: 'Simplified-Chinese'
+        outputFiles: 'zh/**/*.md de fr/**/*.md nb/**/*.md ja/**/*.md ko/**/*.md da/**/*.md nl/**/*.md sv/**/*.md'
+        languages: 'Simplified-Chinese German French Japanese Korean Danish Dutch Swedish'
+        prompt: "I am translating the documentation for helping users.\ Translate the Markdown content I'll paste later into {targetLanguage}.\ You must strictly follow the rules below.\ - Never change the Markdown markup structure. Don't add or remove links. Do not change any URL.\ - Never change the contents of code blocks even if they appear to have a bug.\ - Always preserve the original line breaks. Do not add or remove blank lines.\ - Never touch the permalink such as `{/*examples*/}` at the end of each heading.\ - Never touch HTML-like tags such as `<Notes>`."

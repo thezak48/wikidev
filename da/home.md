@@ -10,7 +10,7 @@ dateCreated: 2023-09-07T13:20:09.700Z
 
 Velkommen til det samlede wiki for Lidarr, Prowlarr, Radarr, Readarr, Sonarr og Whisparr. Samlet set henvises de til som "\*Arr" eller "\*Arrs". De er designet til automatisk at hente, sortere, organisere og overvåge dine musik-, film-, e-bog- eller tv-show-samlinger for Lidarr, Radarr, Readarr, Sonarr og Whisparr; og til at administrere dine indexers og holde dem synkroniseret med de førnævnte apps for Prowlarr.
 
-Bidrag er velkomne enten direkte på Wiki'en, bare godkend med Github først, eller via Pull Requests på vores [repository](https://github.com/Servarr/Wiki).
+Bidrag er velkomne enten direkte på Wiki'en, hvor du først skal godkende med Github, eller via Pull Requests på vores [repository](https://github.com/Servarr/Wiki).
 
 # Applikationer
 
@@ -49,6 +49,6 @@ Bidrag er velkomne enten direkte på Wiki'en, bare godkend med Github først, el
 ## Guides og værktøjer
 
 - [<i class="fas fa-tools"></i>&emsp;Nyttige værktøjer](/useful-tools)
-- [<i class="fas fa-trash-alt"></i>&emsp;TRaSH's Guides *Tutorials og Guides til Radarr, Sonarr, Docker og Downloadklienter*](https://trash-guides.info/)
+- [<i class="fas fa-trash-alt"></i>&emsp;TRaSH's Guides *Tutorials og guides til Radarr, Sonarr, Docker og downloadklienter*](https://trash-guides.info/)
 - [![16.png](/assets/servarr/servarr_dark_fav_16.png)&emsp;Community \*Arr Installationskript *Uofficielt fællesskabsskript*](/install-script)
 {.links-list}

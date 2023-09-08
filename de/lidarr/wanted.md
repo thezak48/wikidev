@@ -1,0 +1,1 @@
+Die Seite "Gesucht" zeigt alle fehlenden Alben an und ermöglicht es, zwischen überwachten und nicht überwachten Alben zu filtern. Außerdem kann nach einzelnen Alben oder der gesamten Liste gesucht werden.

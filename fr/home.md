@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2023-09-07T13:20:09.700Z
 ---
 
-Bienvenue sur le wiki consolidé pour Lidarr, Prowlarr, Radarr, Readarr, Sonarr et Whisparr. Collectivement, ils sont appelés "\*Arr" ou "\*Arrs". Ils sont conçus pour récupérer, trier, organiser et surveiller automatiquement vos collections de musique, de films, de livres électroniques ou de séries télévisées pour Lidarr, Radarr, Readarr, Sonarr et Whisparr ; et pour gérer vos indexeurs et les maintenir synchronisés avec les applications mentionnées pour Prowlarr.
+Bienvenue sur le wiki consolidé pour Lidarr, Prowlarr, Radarr, Readarr, Sonarr et Whisparr. Collectivement, ils sont appelés "\*Arr" ou "\*Arrs". Ils sont conçus pour récupérer, trier, organiser et surveiller automatiquement vos collections de musique, de films, de livres électroniques ou de séries télévisées pour Lidarr, Radarr, Readarr, Sonarr et Whisparr ; et pour gérer vos indexeurs et les maintenir synchronisés avec les applications susmentionnées pour Prowlarr.
 
 Les contributions sont les bienvenues, soit directement sur le wiki en vous authentifiant d'abord avec Github, soit via des demandes de tirage sur notre [dépôt](https://github.com/Servarr/Wiki).
 
@@ -38,7 +38,7 @@ Les contributions sont les bienvenues, soit directement sur le wiki en vous auth
 ## Docker
 
 - [<i class="fab fa-docker"></i>&emsp;Guide Docker](/docker-guide)
-- [<i class="fas fa-box-open"></i>&emsp;Installation de Docker sur un NAS Synology basé sur ARM](/docker-arm-synology)
+- [<i class="fas fa-box-open"></i>&emsp;Installation de Docker sur un NAS Synology ARM](/docker-arm-synology)
 {.links-list}
 
 ## XEM

@@ -8,9 +8,9 @@ editor: markdown
 dateCreated: 2023-09-07T13:20:09.700Z
 ---
 
-Lidarr、Prowlarr、Radarr、Readarr、Sonarr、Whisparrの統合ウィキへようこそ。これらは総称して"\*Arr"または"\*Arrs"と呼ばれます。これらのアプリケーションは、Lidarr、Radarr、Readarr、Sonarr、Whisparrの音楽、映画、電子書籍、テレビ番組コレクションを自動的に取得、整理、管理、監視し、Prowlarrのインデクサーを管理し、それらを前述のアプリと同期させるために設計されています。
+Lidarr、Prowlarr、Radarr、Readarr、Sonarr、Whisparrの統合ウィキへようこそ。これらは総称して"\*Arr"または"\*Arrs"と呼ばれています。これらはLidarr、Radarr、Readarr、Sonarr、Whisparrのために、音楽、映画、電子書籍、TV番組のコレクションを自動的に取得、整理、管理、監視し、Prowlarrのためにインデクサーを管理し、それらを前述のアプリと同期させるために設計されています。
 
-寄稿はウィキ自体で直接行うこともできますが、まずGithubで認証してください。または、[リポジトリ](https://github.com/Servarr/Wiki)にプルリクエストを送信することもできます。
+寄稿はウィキ自体で直接行うこともできますが、まずGithubで認証してください。または、[リポジトリ](https://github.com/Servarr/Wiki)に対してプルリクエストを行うこともできます。
 
 # アプリケーション
 
@@ -19,7 +19,7 @@ Lidarr、Prowlarr、Radarr、Readarr、Sonarr、Whisparrの統合ウィキへよ
 - [![16.png](/assets/lidarr/logos/16.png)&emsp;Lidarr *音楽*](/lidarr)
 - [![16.png](/assets/radarr/logos/16.png)&emsp;Radarr *映画*](/radarr)
 - [![16.png](/assets/readarr/logos/16.png)&emsp;Readarr *書籍*](/readarr)
-- [![16.png](/assets/sonarr/logos/16.png)&emsp;Sonarr *テレビ*](/sonarr)
+- [![16.png](/assets/sonarr/logos/16.png)&emsp;Sonarr *TV*](/sonarr)
 - [![16.png](/assets/whisparr/logos/16.png)&emsp;Whisparr *アダルトビデオ*](/whisparr)
 {.links-list}
 
@@ -43,7 +43,7 @@ Lidarr、Prowlarr、Radarr、Readarr、Sonarr、Whisparrの統合ウィキへよ
 
 ## XEM
 
-- [<i class="fab fa-xing"></i>&emsp;XEMモデレーションガイド *XEMでのさまざまなシナリオのマッピング方法のガイド*](/sonarr/xem-guide)
+- [<i class="fab fa-xing"></i>&emsp;XEMモデレーションガイド *XEMでのさまざまなシナリオのマッピング方法についてのガイド*](/sonarr/xem-guide)
 {.links-list}
 
 ## ガイドとツール

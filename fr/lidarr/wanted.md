@@ -1,0 +1,1 @@
+La page "Wanted" affiche tous les albums manquants avec la possibilité de filtrer entre les albums surveillés et non surveillés, ainsi que de rechercher des albums individuels ou de rechercher dans toute la liste.

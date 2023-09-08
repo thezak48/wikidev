@@ -1,0 +1,1 @@
+La page du calendrier affiche les futures sorties d'albums (par semaine) de tous les artistes de votre bibliothèque.

@@ -8,9 +8,9 @@ editor: markdown
 dateCreated: 2023-09-07T13:20:09.700Z
 ---
 
-欢迎来到 Lidarr、Prowlarr、Radarr、Readarr、Sonarr 和 Whisparr 的综合维基。它们统称为 "\*Arr" 或 "\*Arrs"。它们旨在自动获取、排序、组织和监控您的音乐、电影、电子书或电视节目收藏，适用于 Lidarr、Radarr、Readarr、Sonarr 和 Whisparr；以及用于 Prowlarr 的索引器管理和与前述应用程序保持同步。
+欢迎来到 Lidarr、Prowlarr、Radarr、Readarr、Sonarr 和 Whisparr 的综合维基。它们统称为 "\*Arr" 或 "\*Arrs"。它们旨在自动获取、排序、组织和监控您的音乐、电影、电子书或电视节目收藏，适用于 Lidarr、Radarr、Readarr、Sonarr 和 Whisparr；并且用于管理您的索引器，并与前述应用程序保持同步，适用于 Prowlarr。
 
-欢迎您直接在维基上进行贡献，只需先通过 Github 进行身份验证，或通过我们的[存储库](https://github.com/Servarr/Wiki)提交拉取请求。
+欢迎通过维基直接进行贡献，只需先通过 Github 进行身份验证，或通过我们的[存储库](https://github.com/Servarr/Wiki)提交拉取请求。
 
 # 应用程序
 
@@ -43,7 +43,7 @@ dateCreated: 2023-09-07T13:20:09.700Z
 
 ## XEM
 
-- [<i class="fab fa-xing"></i>&emsp;XEM 管理指南 *如何在 XEM 中映射各种情况的指南*](/sonarr/xem-guide)
+- [<i class="fab fa-xing"></i>&emsp;XEM 审查指南 *有关如何在 XEM 中映射各种情况的指南*](/sonarr/xem-guide)
 {.links-list}
 
 ## 指南和工具

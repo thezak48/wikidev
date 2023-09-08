@@ -5,21 +5,22 @@ on:
     branches:
     - main
     paths-ignore:
-    - '.github**/*'
-    - 'zh/**/*'
-    - 'fr/**/*'
-    - 'de/**/*' 
-    - 'nb/**/*' 
-    - 'ja/**/*' 
-    - 'ko/**/*' 
-    - 'da/**/*' 
-    - 'nl/**/*' 
-    - 'sv/**/*'
-    - 'assets/**/*'
-    - 'images/**/*'
-    - 'scripts/**/*'
-    - 'README.md'
-    - 'install-script.md'
+      - '.github**/*'
+      - 'zh/**/*'
+      - 'fr/**/*'
+      - 'de/**/*' 
+      - 'nb/**/*' 
+      - 'ja/**/*' 
+      - 'ko/**/*' 
+      - 'da/**/*' 
+      - 'nl/**/*' 
+      - 'sv/**/*'
+      - 'radarr/cardigann-yml-definition.md'
+      - 'radarr/supported-indexers.md'
+      - 'assets/**/*'
+      - 'images/**/*'
+      - 'scripts/**/*'
+      - 'README.md'
 
 jobs:
   gpt_translate:

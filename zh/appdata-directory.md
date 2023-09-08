@@ -1,0 +1,53 @@
+---
+title: Lidarr应用数据目录
+description: 
+published: true
+date: 2021-11-24T19:22:06.078Z
+tags: lidarr, appdata
+editor: markdown
+dateCreated: 2021-06-09T15:53:13.142Z
+---
+
+> 以下是应用数据目录的默认路径 {.is-info}
+
+> 所有的`$USER`都是应用程序正在运行的用户的占位符 {.is-warning}
+
+# Windows
+
+`C:\ProgramData\Lidarr`
+
+# Linux
+
+除非另有指定，Lidarr将把其应用数据存储在用户Lidarr正在运行的主文件夹中 `/home/$USER/.config/Lidarr` 或者 `~/.config/Lidarr`
+
+安装说明指定了 `/var/lib/lidarr`
+
+# MacOS (OSX)
+
+{#os-x}
+
+`/Users/$USER/.config/Lidarr` 或者 `~/.config/Lidarr`
+
+# Synology
+
+`/usr/local/Lidarr/var/.config/Lidarr`
+
+`/volume1/@appstore/Lidarr/var/.config/Lidarr`
+
+# QNAP
+
+`/share/MD0_DATA/homes/admin/.config/Lidarr`
+
+`/share/CACHEDEV1_DATA/Lidarr_CONFIG`
+
+# Docker
+
+`/config`
+
+- 这将根据用户在主机系统上映射`/config`的位置而有所不同
+
+# 参数
+
+`-data=`参数强制指定AppData文件夹的位置，因此您的启动命令可能会强制指定特定位置。尝试运行多个实例时，这是必需的。在Windows上，这将是`/data=`
+
+`-nobrowser`参数在启动时不启动/打开浏览器。在Windows上，这将是`/nobrowser`

@@ -10,7 +10,7 @@ dateCreated: 2021-05-16T23:39:16.456Z
 
 ![128.png](/assets/lidarr/logos/128.png)
 
-> Lidarr是一个用于Usenet和BitTorrent用户的音乐收藏管理器。它可以监视多个RSS订阅源，以获取您最喜爱的艺术家的新曲目，并将其抓取、排序和重命名。它还可以配置为在更高质量的格式可用时自动升级已下载的文件的质量。
+> Lidarr 是一个针对 Usenet 和 BitTorrent 用户的音乐收藏管理器。它可以监视多个 RSS 订阅源，以获取你最喜爱的艺术家的新曲目，并将其抓取、排序和重命名。当更高质量的文件格式可用时，它还可以配置为自动升级已下载的文件的质量。
 {.is-info}
 
 # 入门指南
@@ -30,9 +30,9 @@ dateCreated: 2021-05-16T23:39:16.456Z
 - [<i class="fas fa-laptop"></i>&emsp;系统](/lidarr/system)
 - [<i class="fas fa-scroll"></i>&emsp;自定义脚本](/lidarr/custom-scripts)
 - [<i class="fas fa-gifts"></i>&emsp;技巧和窍门](/lidarr/tips-and-tricks)
-- [<i class="fas fa-database"></i>&emsp;应用数据（AppData）目录](/lidarr/appdata-directory)
-- [<i class="fas fa-server"></i>&emsp;使用PostgreSQL数据库配置Lidarr](/lidarr/postgres-setup)
-- [<i class="fas fa-cogs"></i>&emsp;支持的*更多信息消歧义页面*](/lidarr/supported)
+- [<i class="fas fa-database"></i>&emsp;应用数据 (AppData) 目录](/lidarr/appdata-directory)
+- [<i class="fas fa-server"></i>&emsp;使用 PostgreSQL 数据库配置 Lidarr](/lidarr/postgres-setup)
+- [<i class="fas fa-cogs"></i>&emsp;支持的 *更多信息消歧义页面*](/lidarr/supported)
 {.links-list}
 
 # 故障排除
@@ -43,14 +43,14 @@ dateCreated: 2021-05-16T23:39:16.456Z
 # 开发
 
 - [<i class="fas fa-laptop-code"></i>&emsp;贡献](/lidarr/contributing)
-- [<i class="fas fa-book"></i>&emsp;API文档](https://lidarr.audio/docs/api/)
+- [<i class="fas fa-book"></i>&emsp;API 文档](https://lidarr.audio/docs/api/)
 {.links-list}
 
 # 支持
 
-仍然有问题？随时访问我们的支持网站获取额外帮助
+仍然遇到问题？随时访问我们的支持网站获取额外的帮助
 
-- [<i class="fab fa-discord"></i>&emsp;Discord *官方Lidarr Discord*](https://lidarr.audio/discord)
+- [<i class="fab fa-discord"></i>&emsp;Discord *官方 Lidarr Discord*](https://lidarr.audio/discord)
 {.links-list}
 
 # 链接

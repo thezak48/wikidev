@@ -8,9 +8,9 @@ editor: markdown
 dateCreated: 2023-09-07T13:20:09.700Z
 ---
 
-Welkom bij de geconsolideerde wiki voor Lidarr, Prowlarr, Radarr, Readarr, Sonarr en Whisparr. Samen worden ze ook wel "\*Arr" of "\*Arrs" genoemd. Ze zijn ontworpen om automatisch je muziek-, film-, e-book- of tv-showcollecties te pakken, sorteren, organiseren en monitoren voor Lidarr, Radarr, Readarr, Sonarr en Whisparr; en om je indexers te beheren en ze in sync te houden met de eerder genoemde apps voor Prowlarr.
+Welkom bij de geconsolideerde wiki voor Lidarr, Prowlarr, Radarr, Readarr, Sonarr en Whisparr. Samen worden ze ook wel "\*Arr" of "\*Arrs" genoemd. Ze zijn ontworpen om automatisch je muziek-, film-, e-book- of tv-showcollecties te pakken, sorteren, organiseren en controleren voor Lidarr, Radarr, Readarr, Sonarr en Whisparr; en om je indexers te beheren en ze in sync te houden met de eerder genoemde apps voor Prowlarr.
 
-Bijdragen zijn welkom, zowel direct op de Wiki, authenticeer eerst met Github, of via Pull Requests op onze [repository](https://github.com/Servarr/Wiki).
+Bijdragen zijn welkom, zowel direct op de Wiki, waarbij je eerst moet inloggen met Github, als via Pull Requests op onze [repository](https://github.com/Servarr/Wiki).
 
 # Applicaties
 
@@ -32,7 +32,7 @@ Bijdragen zijn welkom, zowel direct op de Wiki, authenticeer eerst met Github, o
 
 ## Algemene Probleemoplossing
 
-- [<i class="far fa-life-ring"></i>&emsp;Algemene Machtigingen & Netwerk Probleemoplossing](/permissions-and-networking)
+- [<i class="far fa-life-ring"></i>&emsp;Algemene machtigingen en netwerkproblemen](/permissions-and-networking)
 {.links-list}
 
 ## Docker

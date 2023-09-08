@@ -10,7 +10,7 @@ dateCreated: 2021-05-24T03:32:41.926Z
 
 ![128.png](/assets/prowlarr/logos/128.png)
 
-> Prowlarr 是一个基于流行的 arr .net/reactjs 基础堆栈构建的索引管理器/代理，可与各种 PVR 应用集成。Prowlarr 支持管理 Torrent Tracker 和 Usenet Indexer。它与 [LazyLibrarian](https://lazylibrarian.gitlab.io/)、[Lidarr](/lidarr)、[Mylar3](https://github.com/mylar3/mylar3)、[Radarr](/radarr)、[Readarr](/readarr) 和 [Sonarr](/sonarr) 完美集成，无需为每个应用程序设置索引器（我们都会处理）。
+> Prowlarr 是一个基于流行的 arr .net/reactjs 基础堆栈构建的索引管理器/代理，可与各种 PVR 应用集成。Prowlarr 支持管理 Torrent Trackers 和 Usenet Indexers。它与 [LazyLibrarian](https://lazylibrarian.gitlab.io/)、[Lidarr](/lidarr)、[Mylar3](https://github.com/mylar3/mylar3)、[Radarr](/radarr)、[Readarr](/readarr) 和 [Sonarr](/sonarr) 无缝集成，提供完整的索引器管理，无需为每个应用程序设置索引器（我们都会处理）。
 {.is-info}
 
 # 入门指南
@@ -56,6 +56,6 @@ dateCreated: 2021-05-24T03:32:41.926Z
 # 链接
 
 - [prowlarr.com *网站*](https://prowlarr.com)
-- [捐赠 *捐款*](https://prowlarr.com/donate)
+- [捐赠 *捐赠*](https://prowlarr.com/donate)
 - [GitHub *源代码*](https://github.com/prowlarr/prowlarr)
 {.links-list}

@@ -2,10 +2,10 @@
 title: Radarr Linux Installation
 description: Linux-Installationsanleitung für Radarr
 published: true
-date: 2023-07-03T20:30:47.519Z
+date: 2023-09-07T20:43:01.533Z
 tags: 
 editor: markdown
-dateCreated: 2023-07-03T20:11:02.991Z
+dateCreated: 2023-07-03T20:11:59.391Z
 ---
 
 # Linux
@@ -18,11 +18,11 @@ dateCreated: 2023-07-03T20:11:02.991Z
 
 Für Anfänger in Debian / Ubuntu / Raspbian gibt es kein Apt-Repository oder Deb-Paket.
 
-Wenn Sie es einfach haben möchten, folgen Sie diesem von der Community bereitgestellten und gewarteten `Easy Install`-Skript für eine Basisinstallation von Debian (Raspbian / Raspberry Pi OS) / Ubuntu.
+Wenn Sie es einfach haben möchten, folgen Sie diesem von der Community bereitgestellten und gepflegten `Easy Install`-Skript für eine grundlegende Debian (Raspbian / Raspberry Pi OS) / Ubuntu-Installation.
 
 **Für die offiziellen Installationsanweisungen, die "Hands-on" sind, folgen Sie den [Debian / Ubuntu Hands-on Install](#debian-ubuntu-hands-on-install)-Schritten weiter unten.**
 
-[Bitte sehen Sie sich das \*Arr Community Installationsskript an](/install-script)
+[Bitte sehen Sie sich das \*Arr Community Installations-Skript an](/install-script)
 
 > Radarr verwendet eine gebündelte Version von ffprobe für die Analyse von Mediendateien und erfordert nicht, dass ffprobe oder ffmpeg auf dem System installiert sind. Wenn Radarr angibt, dass Ffprobe nicht gefunden wurde, kann dies in der Regel durch eine Neuinstallation behoben werden.
 {.is-info}
@@ -31,9 +31,9 @@ Wenn Sie es einfach haben möchten, folgen Sie diesem von der Community bereitge
 
 Sie müssen die Binärdateien mit den folgenden Befehlen installieren.
 
-> Die folgenden Schritte laden Radarr herunter und installieren es in `/opt`
-> Radarr wird unter dem Benutzer `radarr` und der Gruppe `media` ausgeführt; `media` ist die üblicherweise empfohlene Gruppe, unter der die \*Arrs, Download-Clients und Media-Server ausgeführt werden.
-> Die Konfigurationsdateien von Radarr werden in `/var/lib/radarr` gespeichert
+> Die folgenden Schritte laden die stabile Version (Release-Zweig `master`) von Radarr herunter und installieren sie in `/opt`.
+> Radarr wird unter dem Benutzer `radarr` und der Gruppe `media` ausgeführt. `media` ist die häufig empfohlene Gruppe, unter der die \*Arrs, Download-Clients und Media-Server ausgeführt werden.
+> Die Konfigurationsdateien von Radarr werden in `/var/lib/radarr` gespeichert.
 {.is-success}
 
 - Stellen Sie sicher, dass Sie die erforderlichen Voraussetzungspakete installiert haben:
@@ -47,10 +47,11 @@ sudo apt install curl sqlite3
 > **Installationsvoraussetzungen**
 > Die folgenden Anweisungen basieren auf den folgenden Voraussetzungen. Ändern Sie die Anweisungen bei Bedarf, um Ihren spezifischen Anforderungen gerecht zu werden.
 > \* Der Benutzer `radarr` ist erstellt
-> \* Der Benutzer `radarr` ist Teil der Gruppe `media`
-> \* Ihre Download-Clients und Media-Server werden als und sind Teil der Gruppe `media`
+> \* Der Benutzer `radarr` gehört zur Gruppe `media`
+> \* Ihre Download-Clients und Media-Server werden als Teil der Gruppe `media` ausgeführt und sind Teil davon
 > \* Ihre Pfade, die von Ihren Download-Clients und Media-Servern verwendet werden, sind für die Gruppe `media` zugänglich (lesen/schreiben)
-> \* Sie haben das Verzeichnis `/var/lib/radarr` erstellt und sichergestellt, dass der Benutzer `radarr` Lese-/Schreibberechtigungen dafür hat
+> \* Sie haben das Verzeichnis `/var/lib/radarr` erstellt und sichergestellt, dass der Benutzer `radarr` Lese-/Schreibrechte dafür hat
+> \* Vorherige/vorhandene Installationen verwendeten den Release-Zweig `master`, der in den [FAQ](/radarr/faq) angegeben ist, oder Sie aktualisieren `master` in der Download-URL
 {.is-danger}
 
 > Durch die Fortsetzung unten bestätigen Sie, dass Sie die oben genannten Anforderungen gelesen und erfüllt haben. {.is-success}
@@ -77,7 +78,7 @@ tar -xvzf Radarr*.linux*.tar.gz
 sudo mv Radarr /opt/
 ```
 
-> Hinweis: Dies setzt voraus, dass Sie als Benutzer `radarr` und Gruppe `media` ausgeführt werden. Sie können dies ändern, um Ihren Anwendungsfall anzupassen. Es ist wichtig, den Gruppennamen zwischen Ihrem Download-Client(s) und Radarr identisch zu halten, um Berechtigungsprobleme mit Ihren Mediendateien zu vermeiden. Wir empfehlen, mindestens den Gruppennamen zwischen Ihrem Download-Client(s) und Radarr identisch zu halten.
+> Hinweis: Dies setzt voraus, dass Sie als Benutzer `radarr` und Gruppe `media` ausgeführt werden. Sie können dies entsprechend Ihren Anforderungen ändern. Es ist wichtig, dass Sie mindestens den Gruppennamen zwischen Ihrem Download-Client(s) und Radarr identisch halten, um Berechtigungsprobleme mit Ihren Mediendateien zu vermeiden.
 {.is-danger}
 
 - Stellen Sie den Besitz des Binärverzeichnisses sicher.
@@ -88,13 +89,13 @@ sudo chown radarr:radarr -R /opt/Radarr
 
 - Konfigurieren Sie systemd, damit Radarr beim Start automatisch gestartet wird.
 
-> Das unten stehende systemd-Erstellungsskript verwendet ein Datenverzeichnis von `/var/lib/radarr`. Stellen Sie sicher, dass es vorhanden ist oder passen Sie es bei Bedarf an. Für das Standarddatenverzeichnis `/home/$USER/.config/Radarr` entfernen Sie einfach das `-data`-Argument. Beachten Sie, dass `$USER` der Benutzer ist, unter dem Radarr ausgeführt wird und unten definiert ist.
+> Das unten stehende systemd-Erstellungsskript verwendet ein Datenverzeichnis von `/var/lib/radarr`. Stellen Sie sicher, dass es vorhanden ist oder passen Sie es bei Bedarf an. Für das Standard-Datenverzeichnis `/home/$USER/.config/Radarr` entfernen Sie einfach das `-data`-Argument. Beachten Sie, dass `$USER` der Benutzer ist, unter dem Radarr ausgeführt wird und unten definiert ist.
 {.is-danger}
 
 ```shell
 cat << EOF | sudo tee /etc/systemd/system/radarr.service > /dev/null
 [Unit]
-Description=Radarr-Daemon
+Description=Radarr Daemon
 After=syslog.target network.target
 [Service]
 User=radarr
@@ -110,7 +111,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-- systemd neu laden:
+- Systemd neu laden:
 
 ```shell
 sudo systemctl -q daemon-reload
@@ -128,12 +129,12 @@ sudo systemctl enable --now -q radarr
 rm Radarr*.linux*.tar.gz
 ```
 
-Normalerweise können Sie auf die Radarr-Web-GUI zugreifen, indem Sie zu `http://{Ihre Server-IP-Adresse}:7878` navigieren
+Normalerweise greifen Sie auf die Radarr-Web-GUI über `http://{Ihre Server-IP-Adresse}:7878` zu
 
 > Radarr verwendet eine gebündelte Version von ffprobe für die Analyse von Mediendateien und erfordert nicht, dass ffprobe oder ffmpeg auf dem System installiert sind. Wenn Radarr angibt, dass Ffprobe nicht gefunden wurde, kann dies in der Regel durch eine Neuinstallation behoben werden.
 {.is-info}
 
-Wenn Radarr nicht zu starten schien, überprüfen Sie den Status des Dienstes:
+Wenn Radarr nicht zu starten scheint, überprüfen Sie den Status des Dienstes:
 
 ```shell
 sudo journalctl --since today -u radarr

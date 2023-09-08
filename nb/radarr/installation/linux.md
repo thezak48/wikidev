@@ -2,10 +2,10 @@
 title: Radarr Linux-installasjon
 description: Linux-installasjonsveiledning for Radarr
 published: true
-date: 2023-07-03T20:30:47.519Z
+date: 2023-09-07T20:43:01.533Z
 tags: 
 editor: markdown
-dateCreated: 2023-07-03T20:11:02.991Z
+dateCreated: 2023-07-03T20:11:59.391Z
 ---
 
 # Linux
@@ -18,7 +18,7 @@ dateCreated: 2023-07-03T20:11:02.991Z
 
 For Debian / Ubuntu / Raspbian-nybegynnere finnes det ingen Apt Repository eller Deb-pakke.
 
-Hvis du vil ha en enkel installasjon, kan du følge denne fellesskapsleverte og vedlikeholdte "Easy Install"-skriptet for en grunnleggende Debian (Raspbian / Raspberry Pi OS) / Ubuntu-installasjon.
+Hvis du vil ha en enkel installasjon, kan du følge denne fellesskapsbaserte og vedlikeholdte "Easy Install"-skriptet for en grunnleggende Debian (Raspbian / Raspberry Pi OS) / Ubuntu-installasjon.
 
 **For de offisielle installasjonsinstruksjonene som er "Hands on", følg [Debian / Ubuntu Hands on Install](#debian-ubuntu-hands-on-install)-trinnene lenger ned.**
 
@@ -31,7 +31,7 @@ Hvis du vil ha en enkel installasjon, kan du følge denne fellesskapsleverte og 
 
 Du må installere binærene ved hjelp av følgende kommandoer.
 
-> Trinnene nedenfor vil laste ned Radarr og installere det i `/opt`
+> Trinnene nedenfor vil laste ned den stabile versjonen (`master`-utgavegren) av Radarr og installere den i `/opt`
 > Radarr vil kjøre under brukeren `radarr` og gruppen `media`; `media` er den vanlig anbefalte gruppen å kjøre \*Arrs, nedlastingsklienter og medieserver under.
 > Radarrs konfigurasjonsfiler vil bli lagret i `/var/lib/radarr`
 {.is-success}
@@ -45,12 +45,13 @@ sudo apt install curl sqlite3
 > Advarsel: Hvis du ignorerer de følgende forutsetningene, vil det resultere i en mislykket installasjon og en ikke-fungerende applikasjon. {.is-warning}
 
 > **Installasjonsforutsetninger**
-> Instruksjonene nedenfor er basert på følgende forutsetninger. Endre instruksjonene etter behov for å tilpasse dine spesifikke behov hvis nødvendig.
+> Instruksjonene nedenfor er basert på følgende forutsetninger. Endre instruksjonene etter behov for å passe dine spesifikke behov hvis det er nødvendig.
 > \* Brukeren `radarr` er opprettet
 > \* Brukeren `radarr` er en del av gruppen `media`
-> \* Nedlastingsklientene og medieserveren kjører som og er en del av gruppen `media`
-> \* Stiene som brukes av nedlastingsklientene og medieserveren er tilgjengelige (lese/skrive) for gruppen `media`
+> \* Nedlastingsklientene og medieserveren dine kjører som og er en del av gruppen `media`
+> \* Stiene som brukes av nedlastingsklientene og medieserveren din er tilgjengelige (lese/skrive) for gruppen `media`
 > \* Du har opprettet mappen `/var/lib/radarr` og sikret at brukeren `radarr` har lese-/skrivetilgang til den
+> \* Tidligere/eksisterende installasjoner brukte `master`-utgavegrenen som er nevnt på [FAQ](/radarr/faq) eller du oppdaterer `master` i nedlastings-URLen
 {.is-danger}
 
 > Ved å fortsette nedenfor, erkjenner du at du har lest og oppfylt de ovennevnte kravene. {.is-success}
@@ -80,7 +81,7 @@ sudo mv Radarr /opt/
 > Merk: Dette antar at du vil kjøre som brukeren `radarr` og gruppen `media`. Du kan endre dette for å passe til ditt brukstilfelle. Det er viktig å velge disse riktig for å unngå tillatelsesproblemer med mediefilene dine. Vi anbefaler at du holder minst gruppenavnet identisk mellom nedlastingsklienten(e) dine og Radarr.
 {.is-danger}
 
-- Sørg for eierskapet til binærkatalogen.
+- Sørg for eierskap av binærkatalogen.
 
 ```shell  
 sudo chown radarr:radarr -R /opt/Radarr

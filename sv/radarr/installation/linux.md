@@ -2,10 +2,10 @@
 title: Radarr Linux Installation
 description: Linux installationsguide för Radarr
 published: true
-date: 2023-07-03T20:30:47.519Z
+date: 2023-09-07T20:43:01.533Z
 tags: 
 editor: markdown
-dateCreated: 2023-07-03T20:11:02.991Z
+dateCreated: 2023-07-03T20:11:59.391Z
 ---
 
 # Linux
@@ -18,9 +18,9 @@ dateCreated: 2023-07-03T20:11:02.991Z
 
 För Debian / Ubuntu / Raspbian-nybörjare finns det ingen Apt Repository eller Deb-paket.
 
-Om du vill ha ett enkelt liv, följ denna gemenskapens tillhandahållna och underhållna `Easy Install`-skript för en grundläggande Debian (Raspbian / Raspberry Pi OS) / Ubuntu-installation.
+Om du vill ha ett enkelt liv, följ denna gemenskap tillhandahållna och underhållna `Easy Install`-skript för en grundläggande Debian (Raspbian / Raspberry Pi OS) / Ubuntu-installation.
 
-**För officiella installationsinstruktioner som är "Hands on", följ stegen för [Debian / Ubuntu Hands on Install](#debian-ubuntu-hands-on-install) längre ner.**
+**För officiella installationsinstruktioner som är 'Hands on', följ [Debian / Ubuntu Hands on Install](#debian-ubuntu-hands-on-install)-stegen längre ner.**
 
 [Se \*Arr Community Installation Script](/install-script)
 
@@ -29,9 +29,9 @@ Om du vill ha ett enkelt liv, följ denna gemenskapens tillhandahållna och unde
 
 ### Debian / Ubuntu Hands on Install
 
-Du måste installera binärerna med följande kommandon.
+Du måste installera binärerna med hjälp av följande kommandon.
 
-> Nedanstående steg kommer att ladda ner Radarr och installera det i `/opt`
+> Nedanstående steg kommer att ladda ner den stabila versionen (`master`-utgångsgren) av Radarr och installera den i `/opt`
 > Radarr kommer att köras under användaren `radarr` och gruppen `media`; `media` är den vanligt föreslagna gruppen att köra \*Arrs, nedladdningsklienter och mediaserver under.
 > Radarrs konfigurationsfiler kommer att lagras i `/var/lib/radarr`
 {.is-success}
@@ -42,21 +42,22 @@ Du måste installera binärerna med följande kommandon.
 sudo apt install curl sqlite3
 ```
 
-> Varning: Om du ignorerar följande förutsättningar kommer installationen att misslyckas och programmet kommer inte att fungera. {.is-warning}
+> Varning: Att ignorera nedanstående förutsättningar kommer att resultera i en misslyckad installation och en icke-fungerande applikation. {.is-warning}
 
 > **Installationsförutsättningar**
-> Nedanstående instruktioner är baserade på följande förutsättningar. Ändra instruktionerna vid behov för att passa dina specifika behov.
+> Nedanstående instruktioner är baserade på följande förutsättningar. Ändra instruktionerna vid behov för att passa dina specifika behov om det behövs.
 > \* Användaren `radarr` är skapad
-> \* Användaren `radarr` tillhör gruppen `media`
-> \* Dina nedladdningsklienter och mediaserver körs som och tillhör gruppen `media`
+> \* Användaren `radarr` är en del av gruppen `media`
+> \* Dina nedladdningsklienter och mediaserver körs som och är en del av gruppen `media`
 > \* Dina sökvägar som används av dina nedladdningsklienter och mediaserver är åtkomliga (läs/skriv) för gruppen `media`
 > \* Du har skapat katalogen `/var/lib/radarr` och säkerställt att användaren `radarr` har läs-/skrivrättigheter för den
+> \* Tidigare/existerande installationer använde utgångsgrenen `master` som anges på [FAQ](/radarr/faq) eller så uppdaterar du `master` i nedladdnings-URL:en
 {.is-danger}
 
 > Genom att fortsätta nedan bekräftar du att du har läst och uppfyllt ovanstående krav. {.is-success}
 
 - Ladda ner rätt binärer för din arkitektur.
-  - Du kan ta reda på din arkitektur med `dpkg --print-architecture`
+  - Du kan bestämma din arkitektur med `dpkg --print-architecture`
     - AMD64 använd `arch=x64`
     - ARM, armf och armh använd `arch=arm`
     - ARM64 använd `arch=arm64`
@@ -86,7 +87,7 @@ sudo mv Radarr /opt/
 sudo chown radarr:radarr -R /opt/Radarr
 ```
 
-- Konfigurera systemd så att Radarr kan startas automatiskt vid uppstart.
+- Konfigurera systemd så att Radarr kan starta automatiskt vid uppstart.
 
 > Nedanstående systemd-skript kommer att använda en datakatalog på `/var/lib/radarr`. Se till att den finns eller ändra den vid behov. För standarddatakatalogen `/home/$USER/.config/Radarr` tar du helt enkelt bort argumentet `-data`. Observera att `$USER` är användaren som Radarr körs som och som definieras nedan.
 {.is-danger}
@@ -128,7 +129,7 @@ sudo systemctl enable --now -q radarr
 rm Radarr*.linux*.tar.gz
 ```
 
-Vanligtvis för att komma åt Radarr webbgränssnitt, bläddra till `http://{Din server IP-adress}:7878`
+Vanligtvis för att komma åt Radarr web GUI, bläddra till `http://{Din server IP-adress}:7878`
 
 > Radarr använder en buntad version av ffprobe för analys av mediefiler och kräver inte att ffprobe eller ffmpeg är installerade på systemet. Om Radarr säger att Ffprobe inte hittas kan detta vanligtvis åtgärdas genom en ominstallation.
 {.is-info}
